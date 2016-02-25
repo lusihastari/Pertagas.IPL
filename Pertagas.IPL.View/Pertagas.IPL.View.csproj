@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2AF1983-E731-43A8-91BC-0FEC13FCC625}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pertagas.IPL.View</RootNamespace>
+    <AssemblyName>Sistem Iuran Pengelolaan Lingkungan</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>cluster.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountingReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountingReportForm.designer.cs">
+      <DependentUpon>AccountingReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddressBlockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddressBlockForm.Designer.cs">
+      <DependentUpon>AddressBlockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BalanceReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BalanceReportForm.Designer.cs">
+      <DependentUpon>BalanceReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClusterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClusterForm.Designer.cs">
+      <DependentUpon>ClusterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpenseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpenseForm.Designer.cs">
+      <DependentUpon>ExpenseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncomeClusterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncomeClusterForm.Designer.cs">
+      <DependentUpon>IncomeClusterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncomeClusterReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncomeClusterReportForm.Designer.cs">
+      <DependentUpon>IncomeClusterReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncomeForm.Designer.cs">
+      <DependentUpon>IncomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncomeSourceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncomeSourceForm.Designer.cs">
+      <DependentUpon>IncomeSourceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgressTrackerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressTrackerForm.Designer.cs">
+      <DependentUpon>ProgressTrackerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccountingReportForm.resx">
+      <DependentUpon>AccountingReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddressBlockForm.resx">
+      <DependentUpon>AddressBlockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BalanceReportForm.resx">
+      <DependentUpon>BalanceReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClusterForm.resx">
+      <DependentUpon>ClusterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpenseForm.resx">
+      <DependentUpon>ExpenseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncomeClusterForm.resx">
+      <DependentUpon>IncomeClusterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncomeClusterReportForm.resx">
+      <DependentUpon>IncomeClusterReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncomeForm.resx">
+      <DependentUpon>IncomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncomeSourceForm.resx">
+      <DependentUpon>IncomeSourceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressTrackerForm.resx">
+      <DependentUpon>ProgressTrackerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="IPL.sqlite">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pertagas.IPL.Common\Pertagas.IPL.Common.csproj">
+      <Project>{526100f4-9abc-4e50-becf-ab2a027c6e4e}</Project>
+      <Name>Pertagas.IPL.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pertagas.IPL.Domain\Pertagas.IPL.Domain.csproj">
+      <Project>{6f9ee4f0-a28b-4894-a8ef-3ee1826f7ff1}</Project>
+      <Name>Pertagas.IPL.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pertagas.IPL.Logic\Pertagas.IPL.Logic.csproj">
+      <Project>{5a425a0e-7ecd-46e0-a7b6-4773498b3dad}</Project>
+      <Name>Pertagas.IPL.Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\add.png" />
+    <EmbeddedResource Include="Resources\Images\cancel.png" />
+    <EmbeddedResource Include="Resources\Images\cluster.ico" />
+    <EmbeddedResource Include="Resources\Images\cluster.png" />
+    <EmbeddedResource Include="Resources\Images\clusterincome.ico" />
+    <EmbeddedResource Include="Resources\Images\delete.png" />
+    <EmbeddedResource Include="Resources\Images\edit.png" />
+    <EmbeddedResource Include="Resources\Images\incomesource.ico" />
+    <EmbeddedResource Include="Resources\Images\report.ico" />
+    <EmbeddedResource Include="Resources\Images\save.png" />
+    <EmbeddedResource Include="Resources\Images\user.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cluster.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

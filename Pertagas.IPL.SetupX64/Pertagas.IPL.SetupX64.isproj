@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<!-- Select a Product Configuration -->
+		<InstallShieldProductConfiguration>Express</InstallShieldProductConfiguration>
+		<!-- Select a Visual Studio Configuration / InstallShield Release -->
+		<Configuration>Debug</Configuration>
+		<InstallShieldRelease>$(Configuration)</InstallShieldRelease>
+	</PropertyGroup>
+	<ItemGroup>
+		<!-- The InstallShieldProject item selects the project to build -->
+		<InstallShieldProject Include="$(MSBuildProjectDirectory)\$(MSBuildProjectName).isl"/>
+		<!-- The InstallShieldReleaseFlags sets Release Flags -->
+		<!--<InstallShieldReleaseFlags Include=""/>-->
+		<!-- The InstallShieldMergeModulePath specifies what directories are
+		searched for Merge Modules -->
+		<!--<InstallShieldMergeModulePath Include=""/>-->
+	</ItemGroup>
+	<ItemGroup>
+		<!-- The ProjectReference items refer to any Visual Studio solutions you want to automatically probe for Project Output Groups.  -->
+	</ItemGroup>
+	<ItemGroup>
+		<!-- The TaggedOutputs items allow you to explicitly add extra files to output groups. Each item must include both Name and OutputGroup, as well as TargetPath metadata values. -->
+		<!--<TaggedOutputs Include="C:\My Test Exe.exe">
+			<Name>My Test Project</Name>
+			<OutputGroup>Primary output</OutputGroup>
+			<TargetPath>My Test Exe.exe</TargetPath>
+		</TaggedOutputs> -->
+	</ItemGroup>
+	<Import Project="$(MSBuildExtensionsPath32)\InstallShield\2015Limited\InstallShield.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="..\Pertagas.IPL.Common\Pertagas.IPL.Common.csproj">
+			<Name>Pertagas.IPL.Common</Name>
+			<Project>{526100F4-9ABC-4E50-BECF-AB2A027C6E4E}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\Pertagas.IPL.DataAccess\Pertagas.IPL.DataAccess.csproj">
+			<Name>Pertagas.IPL.DataAccess</Name>
+			<Project>{A924F346-8C18-4B01-966C-AB1FDF2D0E70}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\Pertagas.IPL.Domain\Pertagas.IPL.Domain.csproj">
+			<Name>Pertagas.IPL.Domain</Name>
+			<Project>{6F9EE4F0-A28B-4894-A8EF-3EE1826F7FF1}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\Pertagas.IPL.Logic\Pertagas.IPL.Logic.csproj">
+			<Name>Pertagas.IPL.Logic</Name>
+			<Project>{5A425A0E-7ECD-46E0-A7B6-4773498B3DAD}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\Pertagas.IPL.View\Pertagas.IPL.View.csproj">
+			<Name>Pertagas.IPL.View</Name>
+			<Project>{A2AF1983-E731-43A8-91BC-0FEC13FCC625}</Project>
+		</ProjectReference>
+	</ItemGroup>
+</Project>
